@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulaire d'inscription au CEFTI</title><link rel="stylesheet" href="FormCEFTI.css">
+</head>
+<body>
+  <form action="traitement.php" method="post" enctype="multipart/form-data">
+    <div class="content">
+      <h2>INSCRIPTION!</h2><script>
+        alert("Ce Formulaire à été conçue par CHEUDEU pour l'inscriptions des nouveaux élèves en ligne.Veuillez vous identifier !");
+        function changerFond()
+       { document.body.style.backgroundImage = "url('https://st2.depositphotos.com/8986552/11869/v/950/depositphotos_118699166-stock-illustration-school-pattern-on-gray-chalkboard.jpg')";
+        document.body.style.backgroundsize="cover"}
+      </script>
+    
+    <div class="inputbox">
+      <fieldset>
+        <legend align="center"><figure><img src="https://dovercourt.org/wp-content/uploads/2019/11/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="photo-d'iscription" class="tof" width="40" height="40"></figure></legend><p align="center">
+          Inscrivez-vous au <abbr title="Centre d'Enseignement et de Formation Technique Industrielle">CEFTI</abbr> dans l'un des meilleurs établissement Technique de Douala!
+        </p>
+        <div class="space" role="banner">
+        <input
+        type="text" 
+        id="nom" 
+        name="username" 
+        placeholder="nom d'utilisateur"
+        required><br><br>
+        <input 
+        type="email"
+        id="email"
+        name="adresse email"
+        placeholder="adresse E-mail"
+        required><br><br>
+        <input 
+        type="number"
+        id="age"
+        name="date et heure inscription "
+        placeholder="âge"
+        min="9" max="23"
+        required><br><br>
+        <input type="text"
+        id="classe"
+        name="classe"
+        placeholder="classe et filière"
+        required><br><br>
+        <input
+        type="file"
+        id="photos"
+        accept="image/*"
+        required>
+        <label for="photos">
+       <small><sup><em>
+    <span><input type="checkbox" style="width: 20px; height: 20px;"
+    onclick='alert("Êtes vous sûre de vos informations émises?")'
+    required
+   >soumettre vos coordonnées. </span></em></sup></small>
+        </label>
+        <!--boutton de soumission-->
+       <input type="submit" 
+       id="submit"
+       value="Envoyer"
+        >
+        </div>
+      </fieldset>
+      <small align="center" style="background-color: black;
+      color: white;
+      font-weight: bold;
+      font-family :cursive;
+      text-align:center" 
+      onclick="changerFond()
+      ">CLICK HERE!</small></small>
+      
+    </div>
+    </div>
+  </form>
+</body>
+
+</html>
